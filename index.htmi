@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>디지털 디톡스</title>
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f8f3;
+      color: #2f4f4f;
+    }
+    .container {
+      width: 100%;
+      max-width: 1440px;
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: 60px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    header {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 8px;
+      color: #2e7d32;
+    }
+    header p {
+      font-size: 18px;
+      color: #4e944f;
+    }
+    section {
+      width: 100%;
+      margin-bottom: 60px;
+    }
+    h2 {
+      font-size: 32px;
+      color: #388e3c;
+      margin-bottom: 16px;
+    }
+    p, li {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      width: 100%;
+      text-align: left;
+      font-size: 14px;
+      color: #888;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>디지털 디톡스</h1>
+      <p>자연과 마음을 회복하는 초록색의 쉼</p>
+    </header>
+
+    <section>
+      <h2>정의</h2>
+      <p>디지털 디톡스는 스마트폰, 소셜미디어, 인터넷 등 디지털 기기의 사용을 의도적으로 줄여 심리적, 신체적 회복을 도모하는 자발적 활동입니다.</p>
+    </section>
+
+    <section>
+      <h2>피로감을 느끼는 원인</h2>
+      <ul>
+        <li>지속적인 알림과 정보 폭주로 인한 집중력 저하</li>
+        <li>SNS 비교로 인한 자존감 하락과 감정 소모</li>
+        <li>잠들기 전 스마트폰 사용으로 인한 수면 질 저하</li>
+        <li>실제 대인관계보다 온라인 관계에 의존</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>디지털 디톡스의 필요성</h2>
+      <p>디지털 기기의 과도한 사용은 정신적 스트레스, 사회적 고립, 생산성 저하 등 다양한 문제를 유발합니다. 디지털 디톡스는 이러한 부작용을 줄이고 삶의 균형을 회복하는 데 필요한 실천입니다.</p>
+    </section>
+
+    <section>
+      <h2>디지털 디톡스의 효과</h2>
+      <ul>
+        <li>스트레스 감소 및 심리적 안정감 향상</li>
+        <li>집중력과 창의성 회복</li>
+        <li>수면의 질 개선</li>
+        <li>실제 인간관계의 회복과 강화</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>디지털 디톡스 실천 방법</h2>
+      <ul>
+        <li>⏰ 하루 중 일정 시간 '무디지털 시간' 설정</li>
+        <li>📵 앱 제한 기능 활용하여 SNS 사용 줄이기</li>
+        <li>📚 책 읽기, 산책, 명상 등 아날로그 활동 즐기기</li>
+        <li>🛌 잠자기 1시간 전 스마트폰 사용 금지</li>
+      </ul>
+    </section>
+
+    <footer>
+      ⓒ 2025 디지털 디톡스 프로젝트 – 자연 속에서 다시 나를 찾는 시간
+    </footer>
+  </div>
+</body>
+</html>

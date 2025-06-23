@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Pretendard", "Arial", sans-serif;
+  line-height: 1.55;
+  color: #2b2b2b;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  font-weight: 600;
+  background: #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav a {
+  color: #222;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #49b36d;
+}
+
+.hero {
+  background: url("img/Firefly_하얀\ 배경\ 위에\ 놓인\ 투명한\ 컨셉\ 핸드폰.\ 미래적인\ 느낌의\ 미니멀한\ 디자인이며\,\ 정사각형\ 버튼과\ 모듈이\ 전면에\ 배치되어\ 있음.\ 핸드폰은\ 반투명\ 플라스틱\ \ 845985.jpg")
+    center/cover no-repeat;
+  text-align: center;
+  min-height: 820px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #00000040;
+}
+.hero-inner {
+  position: relative;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #70ffb3;
+  text-shadow: 2px 2px 6px #000;
+}
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+section {
+  padding: 5rem 1.5rem;
+  max-width: 1440px;
+  margin: auto;
+}
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 800;
+  border-left: 10px solid #49b36d;
+  padding-left: 14px;
+  color: #262626;
+}
+
+.pill-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.pill {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 48px;
+  padding: 1.2rem 1.8rem;
+}
+.icon-circle {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.4rem;
+}
+.icon-circle img {
+  width: 60%;
+  height: auto;
+}
+.pill-text {
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.need-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.need-character {
+  max-width: 320px;
+  width: 80%;
+  height: auto;
+}
+.need-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.1rem;
+}
+.need-list span {
+  margin-right: 0.4rem;
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.effect-grid .effect-item {
+  flex: 0 1 280px;
+  text-align: center;
+  background: #f8f8f8;
+  border-radius: 14px;
+  padding: 1.5rem 1rem;
+}
+.effect-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.effect-item p {
+  font-size: 0.95rem;
+}
+
+.methods ul {
+  list-style: none;
+  font-size: 1.05rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.methods li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+.methods li::before {
+  content: "";
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 2rem 1rem;
+  background: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  .pill {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.4rem;
+  }
+  .icon-circle {
+    margin: 0 0 1rem 0;
+  }
+}
+
+.need-interactive {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.need-character {
+  width: 320px;
+  height: auto;
+}
+
+.hover-box {
+  position: absolute;
+  width: 140px;
+  height: 44px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  background: #fff;
+  transition: background 0.3s;
+  overflow: hidden;
+}
+
+.hover-box::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.hover-box:hover::after {
+  opacity: 1;
+}
+.hover-box:hover {
+  background: #fff;
+}
+
+.top-left {
+  top: -20px;
+  left: -160px;
+}
+.top-right {
+  top: -40px;
+  right: -160px;
+}
+.mid-left {
+  top: 110px;
+  left: -180px;
+}
+.bottom-right {
+  bottom: -30px;
+  right: -170px;
+}
+
+.method-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: center;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hover-box {
+    width: 120px;
+    height: 40px;
+    font-size: 0.75rem;
+  }
+  .top-left {
+    left: -130px;
+  }
+  .top-right {
+    right: -130px;
+  }
+  .mid-left {
+    left: -140px;
+  }
+  .bottom-right {
+    right: -140px;
+  }
+}
+
+.need-interactive {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.need-character {
+  width: 800px;
+  height: auto;
+}
+
+.hover-box {
+  position: absolute;
+  width: 150px;
+  height: 46px;
+  border: 2px solid #000;
+  border-radius: 6px;
+  background: #fff;
+  transition: background 0.3s;
+  overflow: hidden;
+}
+
+.hover-box::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-align: center;
+}
+
+.hover-box:hover::after {
+  opacity: 1;
+}
+
+.top-left {
+  top: 60px;
+  left: 80px;
+}
+
+.top-right {
+  top: 50px;
+  right: 80px;
+}
+
+.mid-left {
+  top: 210px;
+  left: 60px;
+}
+
+.bottom-right {
+  top: 330px;
+  right: 60px;
+}
+
+@media (max-width: 768px) {
+  .need-character {
+    width: 280px;
+  }
+
+  .hover-box {
+    width: 130px;
+    height: 42px;
+    font-size: 0.75rem;
+  }
+
+  .top-left {
+    top: 40px;
+    left: 10px;
+  }
+
+  .top-right {
+    top: 30px;
+    right: 10px;
+  }
+
+  .mid-left {
+    top: 160px;
+    left: 10px;
+  }
+
+  .bottom-right {
+    top: 250px;
+    right: 10px;
+  }
+}
+
+.reason-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  padding: 14px 16px;
+  background: #fff;
+  max-width: 480px;
+  margin: 20px auto;
+}
+
+.reason-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 0;
+  background: none;
+}
+
+.reason-box p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
